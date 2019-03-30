@@ -745,3 +745,5 @@ $(document).ready(function() {
         });
     });
 })
+
+console.log("UPDATED");
