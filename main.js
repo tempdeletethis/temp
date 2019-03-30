@@ -57,24 +57,25 @@ $(document).ready(function() {
             e.stopPropagation(), $(this).parents('.app-info').hide(), $(this).parents('.app-widget').removeClass('active'), $(this).parents('.app-widget').css('height', 'auto')
         })
     })
-    $('.mar_v3').each(function() {
-        $(this).click(function() {
-            $(this).css('height', 'auto');
-            $(this).removeClass('active');
-            var e = $(this);
-            var eAppInfo = e.find('.app-info');
-            var eArrow = e.find('.arrow');
-            e.addClass('active');
-            eAppInfo.toggle();
-            eArrow.toggle();
-            var a = e.height(),
-                n = e.find('.app-info').height();
-            e.css('height', a + n + 110)
-            if (e.find('.app-info').css('display') == 'none') {
-                e.find('.app-info').hide(), e.find('.arrow').hide(), e.removeClass('active'), e.css('height', 'auto')
-            }
-        })
-    }), $('.close-btn').each(function() {
+//     $('.mar_v3').each(function() {
+//         $(this).click(function() {
+//             $(this).css('height', 'auto');
+//             $(this).removeClass('active');
+//             var e = $(this);
+//             var eAppInfo = e.find('.app-info');
+//             var eArrow = e.find('.arrow');
+//             e.addClass('active');
+//             eAppInfo.toggle();
+//             eArrow.toggle();
+//             var a = e.height(),
+//                 n = e.find('.app-info').height();
+//             e.css('height', a + n + 110)
+//             if (e.find('.app-info').css('display') == 'none') {
+//                 e.find('.app-info').hide(), e.find('.arrow').hide(), e.removeClass('active'), e.css('height', 'auto')
+//             }
+//         })
+//     })
+//         , $('.close-btn').each(function() {
         $(this).click(function(e) {
             $('div.arrow').hide();
             $('div.app-info').hide();
